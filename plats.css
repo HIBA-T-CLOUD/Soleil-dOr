@@ -1,0 +1,63 @@
+:root {
+    --gold: #C6A96C;
+    --dark-gold: #B69659;
+    --burgundy: #800020;
+    --black:#060D0D;
+    --cream: #F5F5F5;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    color: var(--black);
+    background-color: var(--black);
+}
+
+.meal-grid {
+    margin-bottom: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    padding: 0 ;
+}
+
+.CHEF-card {
+    background-color: black;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.CHEF-card:hover {
+    transform: scale(1.02);
+}
+
+.CHEF-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.chef-content {
+    padding: 1.5rem;
+}
+
+.chef-content h3 {
+    color:var(--dark-gold);
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.chefs-section h2{
+    color:azure;
+    align-self: center;
+    margin-top: 50px;
+
+}
+.chefs-section p{
+    color: #666;
+    font-style: italic;
+}
